@@ -83,7 +83,7 @@ document.querySelectorAll('#barra-navegacion a').forEach(link => {
     const contentSection = document.getElementById('content');
 
     // out
-    contentSection.style.opacity = 0;
+    contentSection.style.opacity = 0.3;
 
     setTimeout(() => {
       contentSection.innerHTML = sectionTemplates[sectionKey] || "<p>Sección no encontrada.</p>";
