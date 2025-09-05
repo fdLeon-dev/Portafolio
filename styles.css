@@ -305,3 +305,84 @@ button {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+/* 📱 Responsividad */
+
+
+@media (max-width: 992px) {
+  #barra-navegacion ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .contenido-principal {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+  }
+
+  img#pinguino {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  #encabezado h1 {
+    font-size: 1.2rem;
+  }
+
+  .terminal-tagline {
+    font-size: 0.8rem;
+  }
+
+  #barra-navegacion ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 20px;
+  }
+
+  .contenido-principal {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  img#pinguino {
+    width: 100px;
+    height: 100px;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+
+  /* Ocultar video en móviles para no consumir datos */
+  .video-background {
+    display: none;
+  }
+
+  body#cuerpo {
+    background: #000 url("./multimedia/img/penguin-1300295_1280.png") no-repeat center center / cover;
+  }
+}
